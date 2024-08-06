@@ -11,6 +11,7 @@ public class Car {
         this.nameCar = nameCar;
     }
 
+
     public String getModel() {
         return model;
     }

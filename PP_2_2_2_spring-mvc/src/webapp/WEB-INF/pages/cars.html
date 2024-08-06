@@ -1,25 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th = "http://thymeleaf.org">
 <head>
-    <title>Cars</title>
+    <meta charset="UTF-8">
+    <title>Машины</title>
+
 </head>
 <body>
-<h1>Car List</h1>
-<table border="1">
-    <thead>
-    <tr>
-        <th>Series</th>
-        <th>Model</th>
-        <th>NameCar</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="car : ${cars}">
-        <td th:text="${car.series}">Series</td>
-        <td th:text="${car.model}">Model</td>
-        <td th:text="${car.nameCar}">NameCar</td>
-    </tr>
-    </tbody>
-</table>
+<div th:each="car:${cars}">
+    <a th:text="${cars.getCars()}">user</a>
+</div>
 </body>
 </html>
