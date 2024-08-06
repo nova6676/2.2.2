@@ -1,16 +1,12 @@
 package CarServis;
 
-import Car.Car;
-import org.springframework.beans.factory.annotation.Autowired;
+import model.Car;
 import org.springframework.stereotype.Service;
-
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
-public class CarServis implements carintersice {
+public class CarServis implements CarInterface {
 
     private final List<Car> carList;
 
